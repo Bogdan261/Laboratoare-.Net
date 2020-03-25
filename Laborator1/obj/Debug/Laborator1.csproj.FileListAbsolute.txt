@@ -1,0 +1,6 @@
+C:\Users\Bogdan\source\repos\Laborator1\Laborator1\bin\Debug\Laborator1.exe.config
+C:\Users\Bogdan\source\repos\Laborator1\Laborator1\bin\Debug\Laborator1.exe
+C:\Users\Bogdan\source\repos\Laborator1\Laborator1\bin\Debug\Laborator1.pdb
+C:\Users\Bogdan\source\repos\Laborator1\Laborator1\obj\Debug\Laborator1.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\Laborator1\Laborator1\obj\Debug\Laborator1.exe
+C:\Users\Bogdan\source\repos\Laborator1\Laborator1\obj\Debug\Laborator1.pdb
