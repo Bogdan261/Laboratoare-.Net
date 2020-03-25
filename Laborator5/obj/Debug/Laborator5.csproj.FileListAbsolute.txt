@@ -1,0 +1,11 @@
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\bin\Debug\Laborator5.exe.config
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\bin\Debug\Laborator5.exe
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\bin\Debug\Laborator5.pdb
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\obj\Debug\Laborator5.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\obj\Debug\Laborator5.csproj.CopyComplete
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\obj\Debug\Laborator5.exe
+C:\Users\Bogdan\source\repos\Laborator5\Laborator5\obj\Debug\Laborator5.pdb
