@@ -1,0 +1,17 @@
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\PrimaFereastra.exe.config
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\PrimaFereastra.exe
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\PrimaFereastra.pdb
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\obj\Debug\PrimaFereastra.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\obj\Debug\PrimaFereastra.Properties.Resources.resources
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\obj\Debug\PrimaFereastra.csproj.GenerateResource.cache
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\obj\Debug\PrimaFereastra.exe
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\obj\Debug\PrimaFereastra.pdb
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\obj\Debug\PrimaFereastra.Form1.resources
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\MyPhotos.dll
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\MyPhotos.pdb
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\MyPhotos.dll.config
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\obj\Debug\PrimaFereastra.csproj.CopyComplete
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\source\repos\MyPhotos\PrimaFereastra\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="FisiereSet" EntityType="Model1.Fisiere" />
+    <EntitySet Name="PersoaneSet" EntityType="Model1.Persoane" />
+    <EntitySet Name="LocatiiSet" EntityType="Model1.Locatii" />
+    <EntitySet Name="EvenimenteSet" EntityType="Model1.Evenimente" />
+    <EntitySet Name="AtributeSet" EntityType="Model1.Atribute" />
+    <AssociationSet Name="FisierePersoane" Association="Model1.FisierePersoane">
+      <End Role="Fisiere" EntitySet="FisiereSet" />
+      <End Role="Persoane" EntitySet="PersoaneSet" />
+    </AssociationSet>
+    <AssociationSet Name="FisiereLocatii" Association="Model1.FisiereLocatii">
+      <End Role="Fisiere" EntitySet="FisiereSet" />
+      <End Role="Locatii" EntitySet="LocatiiSet" />
+    </AssociationSet>
+    <AssociationSet Name="FisiereEvenimente" Association="Model1.FisiereEvenimente">
+      <End Role="Fisiere" EntitySet="FisiereSet" />
+      <End Role="Evenimente" EntitySet="EvenimenteSet" />
+    </AssociationSet>
+    <AssociationSet Name="FisiereAtribute" Association="Model1.FisiereAtribute">
+      <End Role="Fisiere" EntitySet="FisiereSet" />
+      <End Role="Atribute" EntitySet="AtributeSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Fisiere">
+    <Key>
+      <PropertyRef Name="IdFisier" />
+    </Key>
+    <Property Name="IdFisier" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" />
+    <Property Name="DataCreare" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Persoane" Relationship="Model1.FisierePersoane" FromRole="Fisiere" ToRole="Persoane" />
+    <NavigationProperty Name="Locatii" Relationship="Model1.FisiereLocatii" FromRole="Fisiere" ToRole="Locatii" />
+    <NavigationProperty Name="Evenimente" Relationship="Model1.FisiereEvenimente" FromRole="Fisiere" ToRole="Evenimente" />
+    <NavigationProperty Name="Atribute" Relationship="Model1.FisiereAtribute" FromRole="Fisiere" ToRole="Atribute" />
+    <Property Name="Tip" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Persoane">
+    <Key>
+      <PropertyRef Name="IdPersoana" />
+    </Key>
+    <Property Name="IdPersoana" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" />
+    <NavigationProperty Name="Fisiere" Relationship="Model1.FisierePersoane" FromRole="Persoane" ToRole="Fisiere" />
+  </EntityType>
+  <EntityType Name="Locatii">
+    <Key>
+      <PropertyRef Name="IdLocatie" />
+    </Key>
+    <Property Name="IdLocatie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" />
+    <NavigationProperty Name="Fisiere" Relationship="Model1.FisiereLocatii" FromRole="Locatii" ToRole="Fisiere" />
+  </EntityType>
+  <EntityType Name="Evenimente">
+    <Key>
+      <PropertyRef Name="IdEveniment" />
+    </Key>
+    <Property Name="IdEveniment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nume" Type="String" Nullable="false" />
+    <NavigationProperty Name="Fisiere" Relationship="Model1.FisiereEvenimente" FromRole="Evenimente" ToRole="Fisiere" />
+  </EntityType>
+  <EntityType Name="Atribute">
+    <Key>
+      <PropertyRef Name="IdAtribut" />
+    </Key>
+    <Property Name="IdAtribut" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="Fisiere" Relationship="Model1.FisiereAtribute" FromRole="Atribute" ToRole="Fisiere" />
+  </EntityType>
+  <Association Name="FisierePersoane">
+    <End Type="Model1.Fisiere" Role="Fisiere" Multiplicity="*" />
+    <End Type="Model1.Persoane" Role="Persoane" Multiplicity="*" />
+  </Association>
+  <Association Name="FisiereLocatii">
+    <End Type="Model1.Fisiere" Role="Fisiere" Multiplicity="*" />
+    <End Type="Model1.Locatii" Role="Locatii" Multiplicity="*" />
+  </Association>
+  <Association Name="FisiereEvenimente">
+    <End Type="Model1.Fisiere" Role="Fisiere" Multiplicity="*" />
+    <End Type="Model1.Evenimente" Role="Evenimente" Multiplicity="*" />
+  </Association>
+  <Association Name="FisiereAtribute">
+    <End Type="Model1.Fisiere" Role="Fisiere" Multiplicity="*" />
+    <End Type="Model1.Atribute" Role="Atribute" Multiplicity="*" />
+  </Association>
+</Schema>
