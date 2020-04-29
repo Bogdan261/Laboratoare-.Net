@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcGreeter";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc AddPost (msgPost) returns (msgBool);
+  rpc UpdatePost (msgPost) returns (msgPost);
+  rpc DeletePost (msgId) returns (msgInt);
+  rpc GetPostById (msgId) returns (msgPost);
+  rpc GetAllPosts (msgEmpy) returns (msgPosts);
+  rpc AddComment (msgComment) returns (msgBool);
+  rpc UpdateComment (msgComment) returns (msgComment);
+  rpc GetCommentById (msgId) returns (msgComment);
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+message msgPost {
+    int PostId = 1;
+    string Description = 2; 
+    string Domain = 3;
+    System.DateTime Date = 4;
+}
+
+message msgComment{
+    int CommentId = 1;
+    string Text = 2;
+    int PostPostId = 3;
+}
+
+message msgEmpy {}
+
+message msgBool{
+    bool result = 1;
+}
+
+message msgId{
+    int id = 1;
+}
+
+message msgInt{
+    int value = 1;
+}
+
+message msgPosts{
+    repeated msgPost wPost = 1;
+}

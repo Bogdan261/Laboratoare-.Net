@@ -1,0 +1,35 @@
+C:\Users\Bogdan\source\repos\PostComment\PostComment\obj\Debug\PostComment.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\PostComment\PostComment\bin\Debug\PostComment.dll.config
+C:\Users\Bogdan\source\repos\PostComment\PostComment\bin\Debug\PostComment.dll
+C:\Users\Bogdan\source\repos\PostComment\PostComment\bin\Debug\PostComment.pdb
+C:\Users\Bogdan\source\repos\PostComment\PostComment\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\source\repos\PostComment\PostComment\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\source\repos\PostComment\PostComment\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\source\repos\PostComment\PostComment\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\source\repos\PostComment\PostComment\obj\Debug\PostComment.csproj.CopyComplete
+C:\Users\Bogdan\source\repos\PostComment\PostComment\obj\Debug\PostComment.dll
+C:\Users\Bogdan\source\repos\PostComment\PostComment\obj\Debug\PostComment.pdb
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\bin\Debug\PostComment.dll.config
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\bin\Debug\PostComment.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\bin\Debug\PostComment.pdb
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\obj\Debug\PostComment.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\obj\Debug\PostComment.csproj.CoreCompileInputs.cache
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\obj\Debug\PostComment.csproj.CopyComplete
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\obj\Debug\PostComment.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\PostComment\obj\Debug\PostComment.pdb
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\bin\Debug\PostComment.dll.config
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\bin\Debug\PostComment.dll
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\bin\Debug\PostComment.pdb
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\obj\Debug\PostComment.csprojAssemblyReference.cache
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\obj\Debug\PostComment.csproj.CoreCompileInputs.cache
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\obj\Debug\PostComment.csproj.CopyComplete
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\obj\Debug\PostComment.dll
+C:\Users\Bogdan\Desktop\LaboratorNet\GrpcGreeter\PostComment\obj\Debug\PostComment.pdb
