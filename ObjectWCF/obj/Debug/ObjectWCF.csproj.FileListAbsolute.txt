@@ -1,0 +1,30 @@
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\ObjectWCF.dll
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\PostComment.dll
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\PostComment.pdb
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\PostComment.dll.config
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\obj\Debug\ObjectWCF.dll
+C:\Users\Bogdan\source\repos\PostComment\ObjectWCF\obj\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\ObjectWCF.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\PostComment.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\PostComment.pdb
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\PostComment.dll.config
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\obj\Debug\ObjectWCF.csproj.CoreCompileInputs.cache
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\obj\Debug\ObjectWCF.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\obj\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\ObjectWCF.dll.config
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\source\repos\WCF si EF exemplu cu Post si Comment\ObjectWCF\bin\Debug\EntityFramework.SqlServer.xml
