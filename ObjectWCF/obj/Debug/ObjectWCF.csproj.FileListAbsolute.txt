@@ -1,0 +1,24 @@
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\bin\Debug\ObjectWCF.dll
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\bin\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\bin\Debug\MyPhotos.dll
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\bin\Debug\MyPhotos.pdb
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\bin\Debug\MyPhotos.dll.config
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\obj\Debug\ObjectWCF.csproj.CoreCompileInputs.cache
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\obj\Debug\ObjectWCF.dll
+C:\Users\Bogdan\Desktop\Proiect Net2\ObjectWCF\obj\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\bin\Debug\ObjectWCF.dll
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\bin\Debug\ObjectWCF.pdb
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\bin\Debug\MyPhotos.dll
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\bin\Debug\MyPhotos.pdb
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\bin\Debug\MyPhotos.dll.config
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\obj\Debug\ObjectWCF.csproj.CoreCompileInputs.cache
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\obj\Debug\ObjectWCF.dll
+C:\Users\Bogdan\Desktop\Laboratoare-.Net-Proiect2\Laboratoare-.Net-Proiect2\ServerWCF\ObjectWCF\obj\Debug\ObjectWCF.pdb

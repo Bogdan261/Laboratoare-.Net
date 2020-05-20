@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="FisiereSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Fisiere)">
+        <MappingFragment StoreEntitySet="FisiereSet">
+          <ScalarProperty Name="IdFisier" ColumnName="IdFisier" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="DataCreare" ColumnName="DataCreare" />
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersoaneSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Persoane)">
+        <MappingFragment StoreEntitySet="PersoaneSet">
+          <ScalarProperty Name="IdPersoana" ColumnName="IdPersoana" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocatiiSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Locatii)">
+        <MappingFragment StoreEntitySet="LocatiiSet">
+          <ScalarProperty Name="IdLocatie" ColumnName="IdLocatie" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvenimenteSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Evenimente)">
+        <MappingFragment StoreEntitySet="EvenimenteSet">
+          <ScalarProperty Name="IdEveniment" ColumnName="IdEveniment" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtributeSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Atribute)">
+        <MappingFragment StoreEntitySet="AtributeSet">
+          <ScalarProperty Name="IdAtribut" ColumnName="IdAtribut" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FisierePersoane" TypeName="Model1.FisierePersoane" StoreEntitySet="FisierePersoane">
+      <EndProperty Name="Fisiere">
+        <ScalarProperty Name="IdFisier" ColumnName="Fisiere_IdFisier" />
+      </EndProperty>
+      <EndProperty Name="Persoane">
+        <ScalarProperty Name="IdPersoana" ColumnName="Persoane_IdPersoana" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FisiereLocatii" TypeName="Model1.FisiereLocatii" StoreEntitySet="FisiereLocatii">
+      <EndProperty Name="Fisiere">
+        <ScalarProperty Name="IdFisier" ColumnName="Fisiere_IdFisier" />
+      </EndProperty>
+      <EndProperty Name="Locatii">
+        <ScalarProperty Name="IdLocatie" ColumnName="Locatii_IdLocatie" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FisiereEvenimente" TypeName="Model1.FisiereEvenimente" StoreEntitySet="FisiereEvenimente">
+      <EndProperty Name="Fisiere">
+        <ScalarProperty Name="IdFisier" ColumnName="Fisiere_IdFisier" />
+      </EndProperty>
+      <EndProperty Name="Evenimente">
+        <ScalarProperty Name="IdEveniment" ColumnName="Evenimente_IdEveniment" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FisiereAtribute" TypeName="Model1.FisiereAtribute" StoreEntitySet="FisiereAtribute">
+      <EndProperty Name="Fisiere">
+        <ScalarProperty Name="IdFisier" ColumnName="Fisiere_IdFisier" />
+      </EndProperty>
+      <EndProperty Name="Atribute">
+        <ScalarProperty Name="IdAtribut" ColumnName="Atribute_IdAtribut" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

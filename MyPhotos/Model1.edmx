@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="FisiereSet" EntityType="Model1.Store.FisiereSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PersoaneSet" EntityType="Model1.Store.PersoaneSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LocatiiSet" EntityType="Model1.Store.LocatiiSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EvenimenteSet" EntityType="Model1.Store.EvenimenteSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AtributeSet" EntityType="Model1.Store.AtributeSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FisierePersoane" EntityType="Model1.Store.FisierePersoane" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FisiereLocatii" EntityType="Model1.Store.FisiereLocatii" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FisiereEvenimente" EntityType="Model1.Store.FisiereEvenimente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FisiereAtribute" EntityType="Model1.Store.FisiereAtribute" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_FisierePersoane_Fisiere" Association="Model1.Store.FK_FisierePersoane_Fisiere">
+      <End Role="Fisiere" EntitySet="FisiereSet" />
+      <End Role="FisierePersoane" EntitySet="FisierePersoane" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FisierePersoane_Persoane" Association="Model1.Store.FK_FisierePersoane_Persoane">
+      <End Role="Persoane" EntitySet="PersoaneSet" />
+      <End Role="FisierePersoane" EntitySet="FisierePersoane" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FisiereLocatii_Fisiere" Association="Model1.Store.FK_FisiereLocatii_Fisiere">
+      <End Role="Fisiere" EntitySet="FisiereSet" />
+      <End Role="FisiereLocatii" EntitySet="FisiereLocatii" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FisiereLocatii_Locatii" Association="Model1.Store.FK_FisiereLocatii_Locatii">
+      <End Role="Locatii" EntitySet="LocatiiSet" />
+      <End Role="FisiereLocatii" EntitySet="FisiereLocatii" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FisiereEvenimente_Fisiere" Association="Model1.Store.FK_FisiereEvenimente_Fisiere">
+      <End Role="Fisiere" EntitySet="FisiereSet" />
+      <End Role="FisiereEvenimente" EntitySet="FisiereEvenimente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FisiereEvenimente_Evenimente" Association="Model1.Store.FK_FisiereEvenimente_Evenimente">
+      <End Role="Evenimente" EntitySet="EvenimenteSet" />
+      <End Role="FisiereEvenimente" EntitySet="FisiereEvenimente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FisiereAtribute_Fisiere" Association="Model1.Store.FK_FisiereAtribute_Fisiere">
+      <End Role="Fisiere" EntitySet="FisiereSet" />
+      <End Role="FisiereAtribute" EntitySet="FisiereAtribute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FisiereAtribute_Atribute" Association="Model1.Store.FK_FisiereAtribute_Atribute">
+      <End Role="Atribute" EntitySet="AtributeSet" />
+      <End Role="FisiereAtribute" EntitySet="FisiereAtribute" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="FisiereSet">
+    <Key>
+      <PropertyRef Name="IdFisier" />
+    </Key>
+    <Property Name="IdFisier" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DataCreare" Type="datetime" Nullable="false" />
+    <Property Name="Tip" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PersoaneSet">
+    <Key>
+      <PropertyRef Name="IdPersoana" />
+    </Key>
+    <Property Name="IdPersoana" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LocatiiSet">
+    <Key>
+      <PropertyRef Name="IdLocatie" />
+    </Key>
+    <Property Name="IdLocatie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EvenimenteSet">
+    <Key>
+      <PropertyRef Name="IdEveniment" />
+    </Key>
+    <Property Name="IdEveniment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nume" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AtributeSet">
+    <Key>
+      <PropertyRef Name="IdAtribut" />
+    </Key>
+    <Property Name="IdAtribut" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FisierePersoane">
+    <Key>
+      <PropertyRef Name="Fisiere_IdFisier" />
+      <PropertyRef Name="Persoane_IdPersoana" />
+    </Key>
+    <Property Name="Fisiere_IdFisier" Type="int" Nullable="false" />
+    <Property Name="Persoane_IdPersoana" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FisiereLocatii">
+    <Key>
+      <PropertyRef Name="Fisiere_IdFisier" />
+      <PropertyRef Name="Locatii_IdLocatie" />
+    </Key>
+    <Property Name="Fisiere_IdFisier" Type="int" Nullable="false" />
+    <Property Name="Locatii_IdLocatie" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FisiereEvenimente">
+    <Key>
+      <PropertyRef Name="Fisiere_IdFisier" />
+      <PropertyRef Name="Evenimente_IdEveniment" />
+    </Key>
+    <Property Name="Fisiere_IdFisier" Type="int" Nullable="false" />
+    <Property Name="Evenimente_IdEveniment" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FisiereAtribute">
+    <Key>
+      <PropertyRef Name="Fisiere_IdFisier" />
+      <PropertyRef Name="Atribute_IdAtribut" />
+    </Key>
+    <Property Name="Fisiere_IdFisier" Type="int" Nullable="false" />
+    <Property Name="Atribute_IdAtribut" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_FisierePersoane_Fisiere">
+    <End Role="Fisiere" Type="Model1.Store.FisiereSet" Multiplicity="1" />
+    <End Role="FisierePersoane" Type="Model1.Store.FisierePersoane" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fisiere">
+        <PropertyRef Name="IdFisier" />
+      </Principal>
+      <Dependent Role="FisierePersoane">
+        <PropertyRef Name="Fisiere_IdFisier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FisierePersoane_Persoane">
+    <End Role="FisierePersoane" Type="Model1.Store.FisierePersoane" Multiplicity="*" />
+    <End Role="Persoane" Type="Model1.Store.PersoaneSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Persoane">
+        <PropertyRef Name="IdPersoana" />
+      </Principal>
+      <Dependent Role="FisierePersoane">
+        <PropertyRef Name="Persoane_IdPersoana" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FisiereLocatii_Fisiere">
+    <End Role="Fisiere" Type="Model1.Store.FisiereSet" Multiplicity="1" />
+    <End Role="FisiereLocatii" Type="Model1.Store.FisiereLocatii" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fisiere">
+        <PropertyRef Name="IdFisier" />
+      </Principal>
+      <Dependent Role="FisiereLocatii">
+        <PropertyRef Name="Fisiere_IdFisier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FisiereLocatii_Locatii">
+    <End Role="FisiereLocatii" Type="Model1.Store.FisiereLocatii" Multiplicity="*" />
+    <End Role="Locatii" Type="Model1.Store.LocatiiSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Locatii">
+        <PropertyRef Name="IdLocatie" />
+      </Principal>
+      <Dependent Role="FisiereLocatii">
+        <PropertyRef Name="Locatii_IdLocatie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FisiereEvenimente_Fisiere">
+    <End Role="Fisiere" Type="Model1.Store.FisiereSet" Multiplicity="1" />
+    <End Role="FisiereEvenimente" Type="Model1.Store.FisiereEvenimente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fisiere">
+        <PropertyRef Name="IdFisier" />
+      </Principal>
+      <Dependent Role="FisiereEvenimente">
+        <PropertyRef Name="Fisiere_IdFisier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FisiereEvenimente_Evenimente">
+    <End Role="FisiereEvenimente" Type="Model1.Store.FisiereEvenimente" Multiplicity="*" />
+    <End Role="Evenimente" Type="Model1.Store.EvenimenteSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Evenimente">
+        <PropertyRef Name="IdEveniment" />
+      </Principal>
+      <Dependent Role="FisiereEvenimente">
+        <PropertyRef Name="Evenimente_IdEveniment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FisiereAtribute_Fisiere">
+    <End Role="Fisiere" Type="Model1.Store.FisiereSet" Multiplicity="1" />
+    <End Role="FisiereAtribute" Type="Model1.Store.FisiereAtribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fisiere">
+        <PropertyRef Name="IdFisier" />
+      </Principal>
+      <Dependent Role="FisiereAtribute">
+        <PropertyRef Name="Fisiere_IdFisier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FisiereAtribute_Atribute">
+    <End Role="FisiereAtribute" Type="Model1.Store.FisiereAtribute" Multiplicity="*" />
+    <End Role="Atribute" Type="Model1.Store.AtributeSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Atribute">
+        <PropertyRef Name="IdAtribut" />
+      </Principal>
+      <Dependent Role="FisiereAtribute">
+        <PropertyRef Name="Atribute_IdAtribut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FisiereSet" EntityType="Model1.Fisiere" />
+          <EntitySet Name="PersoaneSet" EntityType="Model1.Persoane" />
+          <EntitySet Name="LocatiiSet" EntityType="Model1.Locatii" />
+          <EntitySet Name="EvenimenteSet" EntityType="Model1.Evenimente" />
+          <EntitySet Name="AtributeSet" EntityType="Model1.Atribute" />
+          <AssociationSet Name="FisierePersoane" Association="Model1.FisierePersoane">
+            <End Role="Fisiere" EntitySet="FisiereSet" />
+            <End Role="Persoane" EntitySet="PersoaneSet" />
+          </AssociationSet>
+          <AssociationSet Name="FisiereLocatii" Association="Model1.FisiereLocatii">
+            <End Role="Fisiere" EntitySet="FisiereSet" />
+            <End Role="Locatii" EntitySet="LocatiiSet" />
+          </AssociationSet>
+          <AssociationSet Name="FisiereEvenimente" Association="Model1.FisiereEvenimente">
+            <End Role="Fisiere" EntitySet="FisiereSet" />
+            <End Role="Evenimente" EntitySet="EvenimenteSet" />
+          </AssociationSet>
+          <AssociationSet Name="FisiereAtribute" Association="Model1.FisiereAtribute">
+            <End Role="Fisiere" EntitySet="FisiereSet" />
+            <End Role="Atribute" EntitySet="AtributeSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Fisiere">
+          <Key>
+            <PropertyRef Name="IdFisier" />
+          </Key>
+          <Property Name="IdFisier" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nume" Type="String" Nullable="false" />
+          <Property Name="Path" Type="String" Nullable="false" />
+          <Property Name="DataCreare" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Persoane" Relationship="Model1.FisierePersoane" FromRole="Fisiere" ToRole="Persoane" />
+          <NavigationProperty Name="Locatii" Relationship="Model1.FisiereLocatii" FromRole="Fisiere" ToRole="Locatii" />
+          <NavigationProperty Name="Evenimente" Relationship="Model1.FisiereEvenimente" FromRole="Fisiere" ToRole="Evenimente" />
+          <NavigationProperty Name="Atribute" Relationship="Model1.FisiereAtribute" FromRole="Fisiere" ToRole="Atribute" />
+          <Property Name="Tip" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Persoane">
+          <Key>
+            <PropertyRef Name="IdPersoana" />
+          </Key>
+          <Property Name="IdPersoana" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nume" Type="String" Nullable="false" />
+          <NavigationProperty Name="Fisiere" Relationship="Model1.FisierePersoane" FromRole="Persoane" ToRole="Fisiere" />
+        </EntityType>
+        <EntityType Name="Locatii">
+          <Key>
+            <PropertyRef Name="IdLocatie" />
+          </Key>
+          <Property Name="IdLocatie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nume" Type="String" Nullable="false" />
+          <NavigationProperty Name="Fisiere" Relationship="Model1.FisiereLocatii" FromRole="Locatii" ToRole="Fisiere" />
+        </EntityType>
+        <EntityType Name="Evenimente">
+          <Key>
+            <PropertyRef Name="IdEveniment" />
+          </Key>
+          <Property Name="IdEveniment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nume" Type="String" Nullable="false" />
+          <NavigationProperty Name="Fisiere" Relationship="Model1.FisiereEvenimente" FromRole="Evenimente" ToRole="Fisiere" />
+        </EntityType>
+        <EntityType Name="Atribute">
+          <Key>
+            <PropertyRef Name="IdAtribut" />
+          </Key>
+          <Property Name="IdAtribut" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="Fisiere" Relationship="Model1.FisiereAtribute" FromRole="Atribute" ToRole="Fisiere" />
+        </EntityType>
+        <Association Name="FisierePersoane">
+          <End Type="Model1.Fisiere" Role="Fisiere" Multiplicity="*" />
+          <End Type="Model1.Persoane" Role="Persoane" Multiplicity="*" />
+        </Association>
+        <Association Name="FisiereLocatii">
+          <End Type="Model1.Fisiere" Role="Fisiere" Multiplicity="*" />
+          <End Type="Model1.Locatii" Role="Locatii" Multiplicity="*" />
+        </Association>
+        <Association Name="FisiereEvenimente">
+          <End Type="Model1.Fisiere" Role="Fisiere" Multiplicity="*" />
+          <End Type="Model1.Evenimente" Role="Evenimente" Multiplicity="*" />
+        </Association>
+        <Association Name="FisiereAtribute">
+          <End Type="Model1.Fisiere" Role="Fisiere" Multiplicity="*" />
+          <End Type="Model1.Atribute" Role="Atribute" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="FisiereSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Fisiere)">
+        <MappingFragment StoreEntitySet="FisiereSet">
+          <ScalarProperty Name="IdFisier" ColumnName="IdFisier" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="DataCreare" ColumnName="DataCreare" />
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersoaneSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Persoane)">
+        <MappingFragment StoreEntitySet="PersoaneSet">
+          <ScalarProperty Name="IdPersoana" ColumnName="IdPersoana" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocatiiSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Locatii)">
+        <MappingFragment StoreEntitySet="LocatiiSet">
+          <ScalarProperty Name="IdLocatie" ColumnName="IdLocatie" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvenimenteSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Evenimente)">
+        <MappingFragment StoreEntitySet="EvenimenteSet">
+          <ScalarProperty Name="IdEveniment" ColumnName="IdEveniment" />
+          <ScalarProperty Name="Nume" ColumnName="Nume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtributeSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Atribute)">
+        <MappingFragment StoreEntitySet="AtributeSet">
+          <ScalarProperty Name="IdAtribut" ColumnName="IdAtribut" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FisierePersoane" TypeName="Model1.FisierePersoane" StoreEntitySet="FisierePersoane">
+      <EndProperty Name="Fisiere">
+        <ScalarProperty Name="IdFisier" ColumnName="Fisiere_IdFisier" />
+      </EndProperty>
+      <EndProperty Name="Persoane">
+        <ScalarProperty Name="IdPersoana" ColumnName="Persoane_IdPersoana" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FisiereLocatii" TypeName="Model1.FisiereLocatii" StoreEntitySet="FisiereLocatii">
+      <EndProperty Name="Fisiere">
+        <ScalarProperty Name="IdFisier" ColumnName="Fisiere_IdFisier" />
+      </EndProperty>
+      <EndProperty Name="Locatii">
+        <ScalarProperty Name="IdLocatie" ColumnName="Locatii_IdLocatie" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FisiereEvenimente" TypeName="Model1.FisiereEvenimente" StoreEntitySet="FisiereEvenimente">
+      <EndProperty Name="Fisiere">
+        <ScalarProperty Name="IdFisier" ColumnName="Fisiere_IdFisier" />
+      </EndProperty>
+      <EndProperty Name="Evenimente">
+        <ScalarProperty Name="IdEveniment" ColumnName="Evenimente_IdEveniment" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FisiereAtribute" TypeName="Model1.FisiereAtribute" StoreEntitySet="FisiereAtribute">
+      <EndProperty Name="Fisiere">
+        <ScalarProperty Name="IdFisier" ColumnName="Fisiere_IdFisier" />
+      </EndProperty>
+      <EndProperty Name="Atribute">
+        <ScalarProperty Name="IdAtribut" ColumnName="Atribute_IdAtribut" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
