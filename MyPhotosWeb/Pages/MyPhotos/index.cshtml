@@ -1,7 +1,137 @@
 ﻿@page
+
 @model MyPhotosWeb.Pages.MyPhotos.indexModel
 @{
     ViewData["Title"] = "index";
 }
+
+    <h1>Avem @Html.DisplayFor(model => model.numarRezultate) rezultate</h1>
+
+    <form>
+        <p>
+            Title: <input type="text" asp-for="SearchString" />            
+            <select asp-for="persoanaCautata" asp-items="@( new SelectList(Model.persoaneStringList))">
+                <option value="">All Persons</option>
+            </select>
+            <select asp-for="locatiaCautata" asp-items="@( new SelectList(Model.locatiiStringList))">
+                <option value="">All Locations</option>
+            </select>
+            <select asp-for="evenimentulCautat" asp-items="@( new SelectList(Model.evenimenteStringList))">
+                <option value="">All Events</option>
+            </select>
+            <select asp-for="atributulCautat" asp-items="@( new SelectList(Model.atributeStringList))">
+                <option value="">All Atributes</option>
+            </select>
+            <input type="submit" value="Filter" />
+        </p>
+    </form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Poza
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].IdFisier)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].Nume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].Path)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].Tip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].DataCreare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].Persoane)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].Locatii)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].Evenimente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fisiere[0].Atribute)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.fisiere)
+        {
+        <tr style="font-size:small">
+            <td>
+                @{ int ok = 1;
+                    if (!System.IO.File.Exists(@"C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\wwwroot\Photos\" + item.Nume))
+                    {
+                        ok = 0;
+                        <text> Imaginea nu mai exista </text>
+                    }
+                    else
+                    {
+                        ok = 1;
+                        <img src="~/Photos/@Html.DisplayFor(modelItem => item.Nume)" width="38" height="24">
+                        <p><a asp-page="./viewItem" asp-route-nume="@item.Nume"> Vezi poza</a></p>
+                    }
+
+                }                
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdFisier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Path)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCreare)
+            </td>
+            <td>
+
+                @foreach (var k in item.Persoane)
+                {@Html.DisplayFor(modelItem => k.Nume)
+                 <text>,</text>
+            }
+            </td>
+            <td>
+                @foreach (var k in item.Locatii)
+                {
+                    @Html.DisplayFor(modelItem => k.Nume)
+                    <text>,</text>
+                }
+            </td>
+            <td>
+                @foreach (var k in item.Evenimente)
+                {
+                    @Html.DisplayFor(modelItem => k.Nume)
+                    <text>,</text>
+                }
+            </td>
+            <td>
+                @foreach (var k in item.Atribute)
+                {@Html.DisplayFor(modelItem => k.Name)
+                <text>,</text>
+            }
+            </td>
+
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+
 
 

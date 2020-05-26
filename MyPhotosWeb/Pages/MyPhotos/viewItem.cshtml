@@ -1,0 +1,8 @@
+﻿@page
+@model MyPhotosWeb.Pages.MyPhotos.viewItemModel
+@{
+    ViewData["Title"] = "viewItem";
+}
+
+<img src="~/Photos/@Html.DisplayFor(model => model.nume)" width="760" height="480" />
+

@@ -216,8 +216,6 @@ C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.csprojAssemblyReference.cache
-C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.csproj.CoreCompileInputs.cache
-C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.RazorAssemblyInfo.cache
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.RazorAssemblyInfo.cs
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.AssemblyInfoInputs.cache
@@ -242,3 +240,13 @@ C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.pdb
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.genruntimeconfig.cache
 C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\Razor\Pages\MyPhotos\index.cshtml.g.cs
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.csproj.CoreCompileInputs.cache
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\MyPhotosWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bogdan\Desktop\Proiect3\Laboratoare-.Net-Proiect2\ServerWCF\MyPhotosWeb\obj\Debug\netcoreapp3.1\Razor\Pages\MyPhotos\viewItem.cshtml.g.cs
